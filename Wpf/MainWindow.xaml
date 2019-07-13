@@ -1,0 +1,49 @@
+﻿<Window x:Class="Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="478" Width="784">
+    <Grid HorizontalAlignment="Right" Width="776">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*" />
+            <RowDefinition Height="74*" />
+        </Grid.RowDefinitions>
+        <TextBox HorizontalAlignment="Right" Height="20" Margin="0,0,179,174" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="60" RenderTransformOrigin="-0.474,0.24" Name="X" Grid.Row="1" Text="0"/>
+        <TextBox Height="20" Margin="249,0,0,175" TextWrapping="Wrap"  VerticalAlignment="Bottom" Name="Y" Grid.Row="1" Text="0" RenderTransformOrigin="1.017,-0.5" HorizontalAlignment="Left" Width="60"/>
+        <TextBox Height="26" Margin="95,104,50,0" TextWrapping="Wrap"  VerticalAlignment="Top" Name="InputText" Grid.Row="1"/>
+        <Button Name="Start" Content="Start" HorizontalAlignment="Left" Margin="129,98,0,0" VerticalAlignment="Top" Width="77" Click="Start_Click" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.853,-1.45" Height="25"/>
+        <Label Content="X" Grid.Row="1" HorizontalAlignment="Left" Margin="127,23,0,0" VerticalAlignment="Top" Height="24" Width="22" RenderTransformOrigin="0.818,-0.083"/>
+        <Label Content="Y" Grid.Row="1" HorizontalAlignment="Left" Margin="227,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.027,0.531" Height="26" Width="17"/>
+        <RadioButton Content="Send Text" HorizontalAlignment="Left" Margin="20,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.812,-0.189" Name="SendText" Grid.Row="1" Height="15" Width="70"/>
+        <TextBox Text="0" Margin="39,52,0,148" Grid.Column="1" Name="Hr" RenderTransformOrigin="1.849,2.417" HorizontalAlignment="Left" Width="30"/>
+        <TextBox Text="0" Margin="313,53,0,147" Grid.Column="1" Name="Ms" RenderTransformOrigin="1.849,2.417" HorizontalAlignment="Left" Width="36"></TextBox>
+        <TextBox Text="10" Margin="0,52,134,148" Grid.Column="1" Name="Secs" RenderTransformOrigin="0.717,1.833" HorizontalAlignment="Right" Width="27"></TextBox>
+        <TextBox Text="0" Margin="0,52,231,148" Grid.Column="1" Name="Mins" RenderTransformOrigin="-0.547,0.417" HorizontalAlignment="Right" Width="32"/>
+        <Label Content="Hr" Grid.Column="1" HorizontalAlignment="Right" Margin="0,50,349,0" VerticalAlignment="Top" RenderTransformOrigin="0.113,0.538" Height="26" Width="23"/>
+        <Label Content="Mins" Grid.Column="1" HorizontalAlignment="Right" Margin="0,52,263,0" VerticalAlignment="Top" RenderTransformOrigin="0.113,0.538" Height="24" Width="36"/>
+        <Label Content="Secs" Grid.Column="1" HorizontalAlignment="Right" Margin="0,52,166,0" VerticalAlignment="Top" RenderTransformOrigin="1.019,1.346" Height="24" Width="33"/>
+        <Label Content="Ms" Grid.Column="1" HorizontalAlignment="Left" Margin="283,50,0,143" RenderTransformOrigin="0.269,-1.192" Width="26"/>
+        <Label Content="Click Interval" Grid.Column="1" HorizontalAlignment="Right" Margin="0,15,168,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,0.538" Height="26" Width="77"/>
+        <Button  Name="Stop" Content="Stop" Grid.Column="1" HorizontalAlignment="Left" Margin="221,98,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="25" RenderTransformOrigin="1.289,0.641" Click="Stop_Click"/>
+        <ComboBox HorizontalAlignment="Left" Margin="96,60,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.483,2.045" Name="comboBoxButtons" Loaded="ComboBoxButtons_Loaded" Height="22">
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="96,91,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.483,2.045" Name="comboBoxClicks" Loaded="ComboBoxClicks_Loaded" Height="22">
+        </ComboBox>
+        <Label Content="Click Options" HorizontalAlignment="Left" Margin="145,0,0,187" VerticalAlignment="Bottom" Width="82" RenderTransformOrigin="1.756,-0.769" Height="26"/>
+        <Label Content="Mouse Button" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.447,0" Height="26" Width="85"/>
+        <Label Content="Mouse Click" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
+        <TextBox Name="StartDelay" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,0,0,171" Grid.Row="1" TextWrapping="Wrap" Text="2000" VerticalAlignment="Bottom" Width="55" RenderTransformOrigin="0.333,0.087"/>
+        <Label Content="Start Delay" Grid.Column="1" HorizontalAlignment="Left" Margin="40,0,0,171" Grid.Row="1" VerticalAlignment="Bottom" RenderTransformOrigin="0.164,0.385" Height="26" Width="67"/>
+        <Label Content="Cursor Position" HorizontalAlignment="Right" Margin="0,0,278,175" Grid.Row="1" VerticalAlignment="Bottom" RenderTransformOrigin="-0.158,0.654" Height="26" Width="90"/>
+        <Label Content="ms" Grid.Column="1" HorizontalAlignment="Left" Margin="162,26,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.237,-0.154" Width="25" Height="26"/>
+
+
+    </Grid>
+</Window>
